@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Lato:400,800,900');
+// @import '~@angular/material/theming';
+
+// Typography
+$family-sans-serif: 'Nunito', Arial, Helvetica, sans-serif;
+$family-primary: $family-sans-serif;
+// $custom-typography: mat-typography-config(
+//   $font-family: $family-sans-serif,
+// );
+
+// Color scheme
+$primary-blue: #1960ff;
+$primary-green: #0abab5;
+$primary-red: #f59399;
+
+$dark: rgb(22, 28, 41);
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: #ccc;
+$grey: #f5f5f5;
+$grey-light: #f0f0f0;
+$grey-lighter: #f5f5f5;
+$grey-lightest: hsl(0, 0%, 93%) !default;
+$light-grey: #e8f5e9;
+
+$green: #00cc86;
+$green-light: #bafacd;
+$green-bright: lighten($green, 12%);
+$green-pastel: #d4edda;
+
+$red: #dc3900;
+$red-light: #ffe5e3;
+$red-bright: lighten($red, 12%);
+$red-pastel: #f8d7da;
+
+$yellow: #ffd54f;
+$yellow-light: #fff59d;
+$yellow-pale: #ffc107;
+$yellow-dark: #c8a415;
+$yellow-bright: lighten($yellow, 12%);
+$yellow-pastel: #fff3cd;
+
+$body-background-color: $grey-light;
+$el-bg-color: white;
+
+$cross-pattern-base: repeating-linear-gradient(
+  45deg,
+  $grey-lighter,
+  $grey-dark 1px,
+  $grey-lighter 3px,
+  $grey-lighter 5px
+);
+
+// Font
+$text-light: $grey;
+$text-strong: $grey-darker !default;
+
+$fw-standard: 400;
+$fw-heavy: 480;
+$fw-bold: 600;
+$fw-light: 350;
+
+// Border
+$control-border-radius: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$border: $grey-lighter !default;
+$border-hover: $grey-light !default;
+$border-light: $grey-lightest !default;
+$border-light-hover: $grey-light !default;
+
+$border-width: 1px;
+$border-style: solid;
+$border-standard: $border-width $border-style $border;
+
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+$radius-rounded: 290486px !default;
+
+// Animations
+$speed-fast: 500 !default;
+$speed-med: 0.2s !default;
+$easing: ease-out !default;
+
+$transition-ease-default: $speed-med $easing;
+$transition-ease-fast: $speed-fast $easing;
+
+// Box shadow
+
+$box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+  0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+// Table settings
+
+$table-color: black;
+$table-background-color: white;
+
+$table-cell-border: 1px solid $grey;
+$table-cell-border-width: 0 0 2px !default;
+$table-cell-padding: 0.5em 0.75em !default;
+$table-cell-heading-color: $text-strong !default;
+
+$table-head-cell-border-width: 0 0 2px !default;
+$table-head-cell-color: $text-strong !default;
+
+$table-head-background-color: transparent !default;
+$table-body-background-color: transparent !default;
+$table-foot-background-color: transparent !default;
+
+$table-row-back-ground-color: $table-background-color;
+$table-row-hover-background-color: $grey-lighter !default;
+
+$table-row-active-background-color: $grey-light !default;
+$table-row-active-color: inherit !default;
+
+// Panel settings
+
+$block-spacing: 1.5rem !default;
+$panel-margin: $block-spacing;
+$panel-radius: $radius-large;
