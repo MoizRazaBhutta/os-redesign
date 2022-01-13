@@ -4,29 +4,41 @@
   aria-label="main navigation"
   data-cy="nav"
 >
-  <div class="navbar-brand">
-    <a class="navbar-item">
-      <img
-        src="../../assets/one-school-long.svg"
-        alt="logo"
-        width="112"
-        height="28"
-      />
-    </a>
-  </div>
-  <div class="profile-menu">
-    <div class="profile hover" [matMenuTriggerFor]="profileMenu">SI</div>
-    <mat-menu #profileMenu="matMenu">
-      <div class="menu--top">
-        <div class="profile">initials</div>
-        <div class="profile--name">user.first_name user.last_name</div>
-      </div>
+  <div class="upper-half">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img
+          src="../../assets/one-school-long.svg"
+          alt="logo"
+          width="112"
+          height="28"
+        />
+      </a>
+    </div>
+    <div class="profile-menu">
+      <div class="profile hover" [matMenuTriggerFor]="profileMenu">SI</div>
+      <mat-menu #profileMenu="matMenu">
+        <div class="menu--top">
+          <div class="profile">initials</div>
+          <div class="profile--name">user.first_name user.last_name</div>
+        </div>
 
-      <hr />
-      <div class="menu--bottom">
-        <button mat-raised-button color="accent">Log out</button>
+        <hr />
+        <div class="menu--bottom">
+          <button mat-raised-button color="accent">Log out</button>
+        </div>
+      </mat-menu>
+    </div>
+  </div>
+  <div class="bottom-half">
+    <section class="tabs">
+      <div class="tab-items">
+        <a href="">Tab 1</a>
+        <a href="">Tab 2</a>
+        <a href="">Tab 3</a>
+        <a href="">Tab 4</a>
       </div>
-    </mat-menu>
+    </section>
   </div>
 </nav>
 
