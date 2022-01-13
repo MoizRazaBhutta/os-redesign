@@ -1,34 +1,84 @@
 <nav
-  class="navbar"
   role="navigation"
   aria-label="main navigation"
   data-cy="nav"
+  class="navbar"
 >
-  <div class="navbar-brand">
-    <a class="navbar-item">
-      <img
-        src="../../assets/one-school-long.svg"
-        alt="logo"
-        width="112"
-        height="28"
-      />
-    </a>
-  </div>
-  <div class="profile-menu">
-    <div class="profile hover" [matMenuTriggerFor]="profileMenu">SI</div>
-    <mat-menu #profileMenu="matMenu">
-      <div class="menu--top">
-        <div class="profile">initials</div>
-        <div class="profile--name">user.first_name user.last_name</div>
-      </div>
+  <div class="upper-half">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img
+          src="../../assets/one-school-long.svg"
+          alt="logo"
+          width="112"
+          height="28"
+        />
+      </a>
+    </div>
+    <div class="profile-menu">
+      <div class="profile hover" [matMenuTriggerFor]="profileMenu">SI</div>
+      <mat-menu #profileMenu="matMenu">
+        <div class="menu--top">
+          <div class="profile">initials</div>
+          <div class="profile--name">user.first_name user.last_name</div>
+        </div>
 
-      <hr />
-      <div class="menu--bottom">
-        <button mat-raised-button color="accent">Log out</button>
+        <hr />
+        <div class="menu--bottom">
+          <button mat-raised-button color="accent">Log out</button>
+        </div>
+      </mat-menu>
+    </div>
+  </div>
+  <div class="bottom-half">
+    <section class="description">
+      <p>SI Classroom - 10:00 AM, 10 Jan (60 minutes)</p>
+    </section>
+    <section class="tabs">
+      <div class="tab-items">
+        <a href="" class="tab selected">Overview</a>
+        <a href="" class="tab">Documents</a>
+        <a href="" class="tab">Notes</a>
+        <a href="" class="tab">Homework</a>
+        <a href="" class="tab">Report</a>
       </div>
-    </mat-menu>
+    </section>
+    <section class="options">
+      <!-- <div class="circle" style="border: 1px solid black; border-radius: 50%; width: 10px; height: 10px;"></div> -->
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+            <span>Dropdown</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+              Dropdown item
+            </a>
+            <a class="dropdown-item">
+              Other dropdown item
+            </a>
+            <a href="#" class="dropdown-item is-active">
+              Active dropdown item
+            </a>
+            <a href="#" class="dropdown-item">
+              Other dropdown item
+            </a>
+            <hr class="dropdown-divider">
+            <a href="#" class="dropdown-item">
+              With a divider
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </nav>
+
 
 <!-- [routerLink]="homelink" -->
 <!-- (click)="menuAction.emit('logout')" -->

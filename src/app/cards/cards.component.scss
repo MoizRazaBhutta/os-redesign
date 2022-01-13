@@ -19,39 +19,7 @@
     padding: 1em;
   }
 
-  .tabs {
-    flex-basis: 10%;
-
-    border-bottom: 1px solid #eee;
-
-    width: 80vw;
-
-    .tab-items {
-      display: flex;
-      justify-content: flex-start;
-      padding: 15px;
-
-      .tab {
-        margin-right: 20px;
-        border-bottom: 2px solid #eee;
-        cursor: pointer;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          background-color: #eee;
-        }
-
-        &.selected {
-          border-bottom-color: #0abab5;
-          background-color: rgba(10, 186, 181, 0.2);
-          font-weight: 650;
-        }
-      }
-    }
-  }
+  
 
   .card-content {
     flex-basis: 100%;
